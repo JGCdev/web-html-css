@@ -1,0 +1,257 @@
+/* jesusgimenez.com STYLESHEET */
+
+/* LOAD FONTS */
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/Cuprum-Bold.woff2') format('woff2'),
+        url('../fonts/Cuprum-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/Cuprum-Medium.woff2') format('woff2'),
+        url('../fonts/Cuprum-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/Cuprum-Regular.woff2') format('woff2'),
+        url('../fonts/Cuprum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* General Styles */
+html, body{
+    margin: 0;
+    background: linear-gradient(-45deg, #D20B54 0%, #7D9DE8 100%) center center fixed;
+    font-family: 'Cuprum', sans-serif;
+    letter-spacing: 1px;
+}
+.language{
+    width: 75px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom:30px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1rem 3.5rem;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+.content{
+    width: 700px;
+    max-width: 100%;
+    color:rgb(50, 50, 93);
+    padding: 3rem;
+    position: relative;
+    margin: 0px auto;
+    background-color:white;
+    border-radius: 0.4rem;
+    box-shadow:rgba(0, 0, 0, 0.2) 0px 1rem 3.5rem;
+}
+.content-wrapper{
+    max-width: 100%;
+    padding: 2.5rem 2rem;
+}
+.content h2{
+    margin:0px;
+    margin-bottom:20px;
+    font-size:35px;
+}
+a{
+    color:#D20B54;
+    text-decoration: none;
+}
+a:hover{
+    border-bottom: 1px solid;
+}
+.introduction{
+    display:flex;
+    align-items: center;
+}
+.introduction span{
+    font-size: 20px;
+}
+.introduction h1{
+    display: inline;
+    font-size: 20px;
+    margin: 0;
+}
+.introduction p{
+    margin:0px;
+}
+.introduction .sub-title{
+    margin: 5px 0px 15px;
+}
+.sub-title{
+    margin-top:5px;
+}
+.generic, .contacto{
+    margin-top:50px;
+}
+.generic h4{
+    color:#D20B54;
+    margin:0;
+}
+.generic p{
+    margin-top:5px;
+    letter-spacing: 0px;
+}
+
+.flex-container{
+    display:flex;
+}
+.column{
+    flex:1;
+}
+.svg-inline--fa {
+    vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-14 {
+    width: 2.875em;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.icons a{
+    width:35px;
+    margin:7.5px;
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 2em;
+}
+.column p{
+    margin-bottom:0px;
+}
+.column p:first-child{
+    margin-top:0px;
+}
+.column p:last-child{
+    margin-top:10px;
+}
+.contacto a{
+    color:rgb(50, 50, 93);
+    border-bottom:none;
+}
+.text a:hover{
+    border-bottom:1px solid;
+}
+.icons a{
+    transition: all .7s ease;
+}
+.active{
+    border-bottom:2px solid black;
+}
+.photo-container{
+    margin-right: 40px;
+}
+.photo-container img{
+    max-width:150px;
+    border-radius: 0.4rem;
+    box-shadow:rgba(0, 0, 0, 0.2) 0px 1rem 3.5rem;
+}
+.language a{
+    border:none;
+    color:black;
+}
+.language a:hover{
+    border-bottom:2px solid black;
+}
+.m-bottom-0{
+    margin-bottom: 0;
+}
+.exp{
+    margin-bottom:25px;
+}
+.exp p{
+    text-align: justify;
+}
+.exp header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.exp h5{
+    margin: 0;
+    color:#D20B54;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.exp li{
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+.skills-exp h4{
+    display: inline-block;
+    border: 2px solid;
+    padding: 5px;
+    margin: 6px 0px;
+}
+
+/* Media queries */
+@media (max-width: 900px) {
+    .content{
+        width: 500px;
+    }
+}
+@media (max-width: 660px) {
+    .content{
+        width: 400px;
+    }
+    .svg-inline--fa.fa-w-14 {
+        width: 1.875em;
+    }
+    .svg-inline--fa {
+        height: 1.5em;
+    }
+    .introduction {
+        flex-direction: column;
+    }
+    .photo-container{
+        margin-right:0px;
+        margin-bottom:50px;
+    }
+    .photo-container img {
+        max-width: 175px;
+    }
+}
+@media (max-width: 580px) {
+    .content{
+        width: 70%;
+    }
+    .content-wrapper{
+        padding: 2.5rem 0rem;
+    }
+    .exp header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .generic h4 {
+        margin-bottom: 5px;
+    }
+    .flex-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .flex-container .text{
+        margin-bottom:15px;
+    }
+    .icons a:first-child {
+        margin-left: 0px;
+    }
+}
+@media (max-width: 440px) {
+    .content{
+        width: 60%;
+    }
+}

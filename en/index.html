@@ -1,0 +1,265 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap" rel="stylesheet"> 
+        <link href="../assets/font-awesome/all.min.css" rel="stylesheet">
+        <script src="../assets/font-awesome/all.min.js"></script>
+        <style>
+            html, body{
+                margin: 0;
+                background: linear-gradient(-45deg, #D20B54 0%, #7D9DE8 100%) center center fixed;
+                font-family: 'Cuprum', sans-serif;
+                letter-spacing: 1px;
+            }
+            .language{
+                width: 75px;
+                margin: 0 auto;
+                text-align: center;
+                margin-bottom:30px;
+                background: white;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 1rem 3.5rem;
+                border-radius: 5px;
+                padding: 10px 5px;
+            }
+            .content{
+                width: 700px;
+                max-width: 100%;
+                color:rgb(50, 50, 93);
+                padding: 3rem;
+                position: relative;
+                margin: 0px auto;
+                background-color:white;
+                border-radius: 0.4rem;
+                box-shadow:rgba(0, 0, 0, 0.2) 0px 1rem 3.5rem;
+            }
+            .content-wrapper{
+                max-width: 100%;
+                padding: 2.5rem 2rem;
+            }
+            .content h2{
+                margin:0px;
+                margin-bottom:20px;
+                font-size:35px;
+            }
+            a{
+                color:#D20B54;
+                text-decoration: none;
+                border-bottom: 1px solid;
+            }
+            .introduccion span{
+                font-size: 20px;
+            }
+            .introduccion h1{
+                display: inline;
+                font-size: 20px;
+                margin: 0;
+            }
+            .introduccion p{
+                margin:0px;
+            }
+            .introduccion .sub-title{
+                margin: 5px 0px 15px;
+            }
+            .sub-title{
+                margin-top:5px;
+            }
+            .generic, .contacto{
+                margin-top:50px;
+            }
+            .generic h4{
+                color:#D20B54;
+                margin:0;
+            }
+            .generic p{
+                margin-top:5px;
+                letter-spacing: 0px;
+            }
+            .introduccion{
+                display:flex;
+                align-items: center;
+            }
+            .flex-container{
+                display:flex;
+            }
+            .column{
+                flex:1;
+            }
+            .svg-inline--fa {
+                vertical-align: -0.225em;
+            }
+            .svg-inline--fa.fa-w-14 {
+                width: 2.875em;
+            }
+            .icons{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            .icons a{
+                width:35px;
+                margin:7.5px;
+            }
+            .svg-inline--fa {
+                display: inline-block;
+                font-size: inherit;
+                height: 2em;
+            }
+            .column p{
+                margin-bottom:0px;
+            }
+            .column p:first-child{
+                margin-top:0px;
+            }
+            .column p:last-child{
+                margin-top:10px;
+            }
+            .contacto a{
+                color:rgb(50, 50, 93);
+                border-bottom:none;
+            }
+            .text a:hover{
+                border-bottom:1px solid;
+            }
+            .icons a{
+                transition: all .7s ease;
+            }
+            .active{
+                border-bottom:2px solid black;
+            }
+            .photo-container{
+                margin-right: 40px;
+            }
+            .photo-container img{
+                max-width:150px;
+                border-radius: 0.4rem;
+                box-shadow:rgba(0, 0, 0, 0.2) 0px 1rem 3.5rem;
+            }
+            .language a{
+                border:none;
+                color:black;
+            }
+            .language a:hover{
+                border-bottom:2px solid black;
+            }
+            .m-bottom-0{
+                margin-bottom: 0;
+            }
+            .exp{
+                margin-bottom:25px;
+            }
+            .exp p{
+                text-align: justify;
+            }
+            .exp header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .exp h5{
+                margin: 0;
+                color:#D20B54;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                font-size: 11px;
+            }
+            .exp li{
+                letter-spacing: 0.5px;
+            }
+            .skills-exp h4{
+                display: inline-block;
+                border: 2px solid;
+                padding: 5px;
+                margin: 6px 0px;
+            }
+            /* Media queries */
+            @media (max-width: 900px) {
+                .content{
+                    width: 500px;
+                }
+            }
+            @media (max-width: 660px) {
+                .content{
+                    width: 400px;
+                }
+                .svg-inline--fa.fa-w-14 {
+                    width: 1.875em;
+                }
+                .svg-inline--fa {
+                    height: 1.5em;
+                }
+            }
+            @media (max-width: 560px) {
+                .content{
+                    width: 325px;
+                }
+            }
+            @media (max-width: 500px) {
+                .content{
+                    width: 250px;
+                }
+            }
+            
+    
+            </style>
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <div class="language">
+                <span><a href="../index.html">ES</a></span> - <span class="active">EN</span>
+            </div>
+            <main class="content">
+                <section class="introduccion flex-container">
+                    <div class="photo-container">
+                        <img class="profile-img" src="../assets/img/profile.jpg">
+                    </div>
+                    <div class="right">
+                        <span class="title">Hola! Soy <h1>Jesús Giménez</h1></span>,
+                        <p class="sub-title">Desarrollador web full-stack en <a href="#">Hiberus Tecnología</a>.</p>
+                        <p>
+                            Trabajo principalmente con ecosistema Javascript (Angular | Node | MongoDB | Ionic ), PHP, WordPress y Java.
+                            Me considero una persona con espíritu emprendedor y ganas de aprender algo nuevo cada día.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="experiencia">
+                    <h3>Formación</h3>
+                    <div class="exp">
+                        <h4>Técnico Superior en Desarrollo de Aplicaciones Web</h4>
+                        <p>Formación relacionada con programación, entornos de desarrollo, bases de datos, lenguajes de marcas, desarrollo en entorno cliente / servidor, despliegue de aplicaciones, entre otros...</p>
+                    </div>
+                </section>
+                <section class="experiencia">
+                    <h3>Experiencia</h3>
+                   
+                    <div class="exp">
+                        <h4>Desarrollador web Freelance</h4>
+                        <p>Más de 30 páginas web y tiendas online desarrolladas en un periodo de dos años, principalmente usando WordPress y WooCommerce.</p>
+                    </div>
+                    <div class="exp">
+                        <h4>Desarrollador Full-Stack - Gotor Comunicaciones</h4>
+                        <p>Desarrollo de aplicaciones web en entorno de comunicaciones unificadas. Uso de tecnologías CPaaS (Rainbow), Angular y NodeJS.</p>
+                    </div>
+                    <div class="exp">
+                        <h4>Desarrollador Full-Stack - Hiberus</h4>
+                        <p>Desarrollador web en proyecto Havas, enfocado a plataformas de marketing. Tecnologías JAVA (Spring) y Angular.</p>
+                    </div>
+                </section>
+                <section class="contacto">
+                    <h3>Contacto</h3>
+                    <div class="flex-container">
+                        <div class="column text">
+                                <p><a href="#">contacto@jesusgimenez.com</a></p>
+                                <p><a href="#">+34 666 999 769</a></p>
+                        </div>
+                        <div class="column icons">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-github-square"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

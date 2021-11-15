@@ -33,6 +33,17 @@ html, body{
     font-family: 'Cuprum', sans-serif;
     letter-spacing: 1px;
 }
+body::-webkit-scrollbar {
+    width: 25px;
+}
+body::-webkit-scrollbar-track {
+    background: #d683a2;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #d32263;
+    border-radius: 6px;
+    border: 3px solid #d697ae;
+}
 .language{
     width: 75px;
     margin: 0 auto;

@@ -269,8 +269,4 @@ a:hover{
         margin-left: 0px;
     }
 }
-@media (max-width: 440px) {
-    .content{
-        width: 60%;
-    }
-}
+

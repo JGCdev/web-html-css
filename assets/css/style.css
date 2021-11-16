@@ -108,6 +108,11 @@ a:hover{
 .generic h4{
     color:#D20B54;
     margin:0;
+    transition: all .7s ease;
+    cursor:pointer;
+}
+.generic h4:hover{
+    color:#000000;
 }
 .generic p{
     margin-top:5px;
@@ -123,9 +128,7 @@ a:hover{
 .svg-inline--fa {
     vertical-align: -0.225em;
 }
-.svg-inline--fa.fa-w-14 {
-    width: 2.875em;
-}
+
 .icons{
     display: flex;
     align-items: center;
@@ -135,10 +138,11 @@ a:hover{
     width:35px;
     margin:7.5px;
 }
-.svg-inline--fa {
+.svg-inline {
     display: inline-block;
     font-size: inherit;
-    height: 2em;
+    height: 40px;
+    width: 40px;
 }
 .column p{
     margin-bottom:0px;
@@ -150,8 +154,11 @@ a:hover{
     margin-top:10px;
 }
 .contacto a{
-    color:rgb(50, 50, 93);
+    color:#000000;
     border-bottom:none;
+}
+.contacto a:hover{
+    color:#D20B54;
 }
 .text a:hover{
     border-bottom:1px solid;
@@ -239,6 +246,7 @@ a:hover{
 @media (max-width: 580px) {
     .content{
         width: 70%;
+        padding:2rem;
     }
     .content-wrapper{
         padding: 2.5rem 0rem;

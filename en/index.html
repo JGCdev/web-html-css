@@ -1,261 +1,180 @@
-<html lang="es">
+<html lang="en">
     <head>
+        <title>Jesús Giménez - Web Developer</title>
         <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap" rel="stylesheet"> 
-        <link href="../assets/font-awesome/all.min.css" rel="stylesheet">
-        <script src="../assets/font-awesome/all.min.js"></script>
-        <style>
-            html, body{
-                margin: 0;
-                background: linear-gradient(-45deg, #D20B54 0%, #7D9DE8 100%) center center fixed;
-                font-family: 'Cuprum', sans-serif;
-                letter-spacing: 1px;
-            }
-            .language{
-                width: 75px;
-                margin: 0 auto;
-                text-align: center;
-                margin-bottom:30px;
-                background: white;
-                box-shadow: rgba(0, 0, 0, 0.2) 0px 1rem 3.5rem;
-                border-radius: 5px;
-                padding: 10px 5px;
-            }
-            .content{
-                width: 700px;
-                max-width: 100%;
-                color:rgb(50, 50, 93);
-                padding: 3rem;
-                position: relative;
-                margin: 0px auto;
-                background-color:white;
-                border-radius: 0.4rem;
-                box-shadow:rgba(0, 0, 0, 0.2) 0px 1rem 3.5rem;
-            }
-            .content-wrapper{
-                max-width: 100%;
-                padding: 2.5rem 2rem;
-            }
-            .content h2{
-                margin:0px;
-                margin-bottom:20px;
-                font-size:35px;
-            }
-            a{
-                color:#D20B54;
-                text-decoration: none;
-                border-bottom: 1px solid;
-            }
-            .introduccion span{
-                font-size: 20px;
-            }
-            .introduccion h1{
-                display: inline;
-                font-size: 20px;
-                margin: 0;
-            }
-            .introduccion p{
-                margin:0px;
-            }
-            .introduccion .sub-title{
-                margin: 5px 0px 15px;
-            }
-            .sub-title{
-                margin-top:5px;
-            }
-            .generic, .contacto{
-                margin-top:50px;
-            }
-            .generic h4{
-                color:#D20B54;
-                margin:0;
-            }
-            .generic p{
-                margin-top:5px;
-                letter-spacing: 0px;
-            }
-            .introduccion{
-                display:flex;
-                align-items: center;
-            }
-            .flex-container{
-                display:flex;
-            }
-            .column{
-                flex:1;
-            }
-            .svg-inline--fa {
-                vertical-align: -0.225em;
-            }
-            .svg-inline--fa.fa-w-14 {
-                width: 2.875em;
-            }
-            .icons{
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-            }
-            .icons a{
-                width:35px;
-                margin:7.5px;
-            }
-            .svg-inline--fa {
-                display: inline-block;
-                font-size: inherit;
-                height: 2em;
-            }
-            .column p{
-                margin-bottom:0px;
-            }
-            .column p:first-child{
-                margin-top:0px;
-            }
-            .column p:last-child{
-                margin-top:10px;
-            }
-            .contacto a{
-                color:rgb(50, 50, 93);
-                border-bottom:none;
-            }
-            .text a:hover{
-                border-bottom:1px solid;
-            }
-            .icons a{
-                transition: all .7s ease;
-            }
-            .active{
-                border-bottom:2px solid black;
-            }
-            .photo-container{
-                margin-right: 40px;
-            }
-            .photo-container img{
-                max-width:150px;
-                border-radius: 0.4rem;
-                box-shadow:rgba(0, 0, 0, 0.2) 0px 1rem 3.5rem;
-            }
-            .language a{
-                border:none;
-                color:black;
-            }
-            .language a:hover{
-                border-bottom:2px solid black;
-            }
-            .m-bottom-0{
-                margin-bottom: 0;
-            }
-            .exp{
-                margin-bottom:25px;
-            }
-            .exp p{
-                text-align: justify;
-            }
-            .exp header{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-            .exp h5{
-                margin: 0;
-                color:#D20B54;
-                letter-spacing: 0.5px;
-                text-transform: uppercase;
-                font-size: 11px;
-            }
-            .exp li{
-                letter-spacing: 0.5px;
-            }
-            .skills-exp h4{
-                display: inline-block;
-                border: 2px solid;
-                padding: 5px;
-                margin: 6px 0px;
-            }
-            /* Media queries */
-            @media (max-width: 900px) {
-                .content{
-                    width: 500px;
-                }
-            }
-            @media (max-width: 660px) {
-                .content{
-                    width: 400px;
-                }
-                .svg-inline--fa.fa-w-14 {
-                    width: 1.875em;
-                }
-                .svg-inline--fa {
-                    height: 1.5em;
-                }
-            }
-            @media (max-width: 560px) {
-                .content{
-                    width: 325px;
-                }
-            }
-            @media (max-width: 500px) {
-                .content{
-                    width: 250px;
-                }
-            }
-            
-    
-            </style>
+        <meta name="keywords" content="spanish web developer, web developer, angular developer web" />
+        <meta name="description" content="Web developer in Zaragoza specialized in Angular and WordPress. Get to know my experience and latest work." />
+        <meta name="author" content="Jesús Giménez" />
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Inicio">
+        <meta property="og:site_name" content="Jesús Giménez - Web Developer">
+        <meta property="og:description" content="Web developer based in Zaragoza, Spain. Specialized in Angular and WordPress. Get to know my experience and latest work.">
+        <meta property="og:url" content="https://jesusgimenez.com">
+        <meta property="og:locale" content="en_EN">
+        <link rel="stylesheet" href="../assets/css/style.css">
     </head>
     <body>
         <div class="content-wrapper">
             <div class="language">
-                <span><a href="../index.html">ES</a></span> - <span class="active">EN</span>
+                <a href="../index.html">ES</a> - <span class="active">EN</span>
             </div>
             <main class="content">
-                <section class="introduccion flex-container">
+                <section class="introduction">
                     <div class="photo-container">
                         <img class="profile-img" src="../assets/img/profile.jpg">
                     </div>
                     <div class="right">
-                        <span class="title">Hola! Soy <h1>Jesús Giménez</h1></span>,
-                        <p class="sub-title">Desarrollador web full-stack en <a href="#">Hiberus Tecnología</a>.</p>
+                        <span>Hello! 👋 I'm <h1>Jesús Giménez</h1></span>,
+                        <p class="sub-title">Web Developer at <a href="https://webhelp.com/">Webhelp</a>.</p>
                         <p>
-                            Trabajo principalmente con ecosistema Javascript (Angular | Node | MongoDB | Ionic ), PHP, WordPress y Java.
-                            Me considero una persona con espíritu emprendedor y ganas de aprender algo nuevo cada día.
+                            Specialized in Angular and WordPress, I have 4 years of experience in multiple technologies and work teams. 
+                            Currently focused on improving skills with MEAN stack and cloud infrastructures.
                         </p>
                     </div>
                 </section>
 
-                <section class="experiencia">
-                    <h3>Formación</h3>
+
+                <section class="generic">
+                    <h3>Experience</h3>
                     <div class="exp">
-                        <h4>Técnico Superior en Desarrollo de Aplicaciones Web</h4>
-                        <p>Formación relacionada con programación, entornos de desarrollo, bases de datos, lenguajes de marcas, desarrollo en entorno cliente / servidor, despliegue de aplicaciones, entre otros...</p>
+                        <header>
+                            <h4>Frontend Developer - WebHelp</h4>
+                            <h5>Nov 2021 - Now</h5>
+                        </header>
+                        <p><b>Massimo Dutti</b><br> Angular frontend development, Redux,
+                            RxJS, SSR. AngularJS -> Angular 12 Migration.<br>
+                    </div>
+                    <div class="exp">
+                        <header>
+                            <h4>Full-Stack Developer - Hiberus Tecnología</h4>
+                            <h5>Nov 2019 - Nov 2021</h5>
+                        </header>
+                        <p><b>Dineo</b><br> Migration of legacy PHP applications, environment improvement, web monitoring,
+                            testing, continuous integration processes, working under SCRUM / Kanban methodology.</p>
+                        <p><b>Havas Media</b><br> Development and maintenance of dashboards, customer support, pitches and
+                            estimates. </p>
+                    </div>
+                    <div class="exp">
+                        <header>
+                            <h4>Full-Stack Developer - Gotor Comunicaciones</h4>
+                            <h5>Aug 2018 - Nov 2019</h5>
+                        </header>
+                        <p>Web and chatbot development. Integration of communicating telephone switchboards with
+                            web / mobile environments via WebRTC. </p>
+                    </div>
+                    <div class="exp">
+                        <header>
+                            <h4>Freelance Developer</h4>
+                            <h5>Jul 2017 - Sept 2019</h5>
+                        </header>
+                        
+                        <p>
+                            Development of corporate sites and online stores, SEO positioning and server management.
+                             Collaborations with marketing and web design agencies.
+                        </p>
                     </div>
                 </section>
-                <section class="experiencia">
-                    <h3>Experiencia</h3>
-                   
+                <section class="generic">
+                    <h3>Academic</h3>
                     <div class="exp">
-                        <h4>Desarrollador web Freelance</h4>
-                        <p>Más de 30 páginas web y tiendas online desarrolladas en un periodo de dos años, principalmente usando WordPress y WooCommerce.</p>
-                    </div>
-                    <div class="exp">
-                        <h4>Desarrollador Full-Stack - Gotor Comunicaciones</h4>
-                        <p>Desarrollo de aplicaciones web en entorno de comunicaciones unificadas. Uso de tecnologías CPaaS (Rainbow), Angular y NodeJS.</p>
-                    </div>
-                    <div class="exp">
-                        <h4>Desarrollador Full-Stack - Hiberus</h4>
-                        <p>Desarrollador web en proyecto Havas, enfocado a plataformas de marketing. Tecnologías JAVA (Spring) y Angular.</p>
+                        <header>
+                            <h4>High National Diploma on Web Applications Development</h4>
+                            <h5>Sep 2017 - Jun 2019</h5>
+                        </header>
+                        <p>Training related to the following areas:
+                            <ul>
+                                <li>Programming - Java / C</li>
+                                <li>Databases - SQL, NoSQL</li>
+                                <li>Work Environments - IDE's / Testing / CI-CD / Git</li>
+                                <li>Markdown languages - HTML / CSS</li>
+                                <li>Clientside development - Javascript</li>
+                                <li>Serverside development - PHP / Pyhton</li>
+                                <li>App deploy - Apache, Tomcat</li>
+                                <li>Interface design and UX - Sketch, Figma, Photoshop</li>
+                            </ul>
+                        </p>
                     </div>
                 </section>
+                <section class="generic">
+                    <h3>Skills</h3>
+                    <div class="exp skills-exp">
+                        <h4>Front-End</h4>
+                        <h4>Back-End</h4>
+                        <h4>Dev-ops</h4>
+                        <h4>Angular</h4>
+                        <h4>Ionic</h4>
+                        <h4>WordPress</h4>
+                        <h4>PHP</h4>
+                        <h4>JAVA</h4>
+                        <h4>NodeJS</h4>
+                        <h4>MongoDB</h4>
+                        <h4>PostgreSQL</h4>
+                        <h4>MySQL</h4>
+                        <h4>SASS</h4>
+                        <h4>HTML5</h4>
+                        <h4>CSS3</h4>
+                        <h4>Nginx</h4>
+                        <h4>Apache</h4>
+                        <h4>Git</h4>
+                        <h4>Docker</h4>
+                        <h4>Agile Metodologies</h4>
+                        <h4>App / Web / Desktop</h4>
+                        <h4>SCRUM</h4>
+                        <h4>Linux</h4>
+                    </div>
+                </section>
+                <section class="generic">
+                    <h3>Projects:</h3>
+                    <div class="exp">
+                        <header>
+                            <h4>GTAV Gaming server</h4>
+                        </header>
+                        <p>Autonomous operating infrastructure for a video game server with the following characteristics: </p>
+                        <ul>
+                            <li> Debian 9 machine with anti DDoS system based on Fail2Ban. </li>
+                            <li> Game customization using scripting languages (LUA and Javascript). </li>
+                            <li> MySQL database + administration panel in PHP. </li>
+                            <li> Discord Bot based on NodeJS and DiscordJS. </li>
+                            <li> Web WordPress + Forum. </li>
+                            <li> Development environments, gitflow and automations. </li>
+                            <li> Support to the community of +15000 registered users. </li>
+                        </ul>
+                    </div>
+                    <div class="exp">
+                        <header>
+                            <h4>Development of +30 websites</h4>
+                        </header>
+                        <p>Websites of all kinds, generally corporate sites developed in WordPress. Among others:
+                        </p>
+                        <ul>
+                            <li><a href="https://gotorindustria.com/" target="_blank">Gotor Industria</a></li>
+                            <li><a href="https://www.dentaltorralba.com/" target="_blank">Dental Torralba</a></li>
+                            <li><a href="https://dracartagena.com/" target="_blank">Dra Cartagena</a></li>
+                            <li><a href="https://vspproyectos.com/" target="_blank">VSP Proyectos</a></li>
+                            <li><a href="http://acapdecreus.cat/" target="_blank">Asesoría Cap de Creus</a></li>
+                            <li><a href="https://criptobytes.com" target="_blank">CriptoBytes</a></li>
+                        </ul>
+                    </div>
+
+                </section>
+                
                 <section class="contacto">
-                    <h3>Contacto</h3>
+                    <h3>Keep in touch!</h3>
                     <div class="flex-container">
                         <div class="column text">
-                                <p><a href="#">contacto@jesusgimenez.com</a></p>
-                                <p><a href="#">+34 666 999 769</a></p>
+                                <p><a href="mailto:contacto@jesusgimenez.com">contacto@jesusgimenez.com</a></p>
+                                <p><a href="tel:+34666999769">+34 666 999 769</a></p>
                         </div>
                         <div class="column icons">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-github-square"></i></a>
+                                <a href="https://www.linkedin.com/in/jes%C3%BAs-gim%C3%A9nez/" target="_blank">
+                                    <svg class="svg-inline" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" class="path-selector" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                                </a>
+                                <a href="https://www.instagram.com/jesusgimenezcom" target="_blank">
+                                    <svg class="svg-inline" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                                </a>
+                                <a href="https://github.com/JGCdev" target="_blank">
+                                    <svg class="svg-inline" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"></path></svg>
+                                </a>
                         </div>
                     </div>
                 </section>

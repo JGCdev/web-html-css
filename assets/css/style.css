@@ -245,8 +245,8 @@ a:hover{
 }
 @media (max-width: 580px) {
     .content{
-        width: 70%;
-        padding:2rem;
+        width: 75%;
+        padding:1.5rem;
     }
     .content-wrapper{
         padding: 2.5rem 0rem;

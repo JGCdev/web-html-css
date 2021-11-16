@@ -154,7 +154,7 @@ a:hover{
     margin-top:10px;
 }
 .contacto a{
-    color:#000000;
+    color:rgb(50, 50, 93);
     border-bottom:none;
 }
 .contacto a:hover{
@@ -263,7 +263,7 @@ a:hover{
         align-items: flex-start;
     }
     .flex-container .text{
-        margin-bottom:15px;
+        margin-bottom: 20px;
     }
     .icons a:first-child {
         margin-left: 0px;

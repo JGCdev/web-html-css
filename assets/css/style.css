@@ -86,10 +86,12 @@ a:hover{
 }
 .introduction span{
     font-size: 20px;
+    font-weight:bold;
 }
 .introduction h1{
     display: inline;
     font-size: 20px;
+    font-weight:200;
     margin: 0;
 }
 .introduction p{

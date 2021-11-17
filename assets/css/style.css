@@ -44,6 +44,13 @@ body::-webkit-scrollbar-thumb {
     border-radius: 6px;
     border: 3px solid #d697ae;
 }
+a{
+    color:#D20B54;
+    text-decoration: none;
+}
+a:hover{
+    border-bottom: 1px solid;
+}
 .language{
     width: 75px;
     margin: 0 auto;
@@ -70,16 +77,8 @@ body::-webkit-scrollbar-thumb {
     padding: 2.5rem 2rem;
 }
 .content h2{
-    margin:0px;
-    margin-bottom:20px;
-    font-size:35px;
-}
-a{
-    color:#D20B54;
-    text-decoration: none;
-}
-a:hover{
-    border-bottom: 1px solid;
+    font-size: 16px;
+    font-weight: lighter;
 }
 .introduction{
     display:flex;
@@ -109,26 +108,17 @@ a:hover{
     color:#D20B54;
     margin:0;
     transition: all .7s ease;
-    cursor:pointer;
-}
-.generic h4:hover{
-    color:#000000;
 }
 .generic p{
     margin-top:5px;
     letter-spacing: 0px;
 }
-
 .flex-container{
     display:flex;
 }
 .column{
     flex:1;
 }
-.svg-inline--fa {
-    vertical-align: -0.225em;
-}
-
 .icons{
     display: flex;
     align-items: center;
@@ -137,6 +127,7 @@ a:hover{
 .icons a{
     width:35px;
     margin:7.5px;
+    transition: all .7s ease;
 }
 .svg-inline {
     display: inline-block;
@@ -162,9 +153,6 @@ a:hover{
 }
 .text a:hover{
     border-bottom:1px solid;
-}
-.icons a{
-    transition: all .7s ease;
 }
 .active{
     border-bottom:2px solid black;
@@ -214,6 +202,10 @@ a:hover{
     border: 2px solid;
     padding: 5px;
     margin: 6px 0px;
+    cursor:pointer;
+}
+.skills-exp h4:hover{
+    color:rgb(50, 50, 93);
 }
 
 /* Media queries */
@@ -225,12 +217,6 @@ a:hover{
 @media (max-width: 660px) {
     .content{
         width: 400px;
-    }
-    .svg-inline--fa.fa-w-14 {
-        width: 1.875em;
-    }
-    .svg-inline--fa {
-        height: 1.5em;
     }
     .introduction {
         flex-direction: column;

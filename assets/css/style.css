@@ -324,13 +324,24 @@ input:checked + .slider:before {
 .dark-theme .generic h4, .dark-theme .exp h5, .dark-theme a{
     color: #FF5B97;
 }
+.dark-theme .skills-exp h4:hover{
+    color:#D20B54;
+}
+
 .dark-theme .language a{
-    color:rgb(50, 50, 93);
+    color:#eee;
 }
 
 .dark-theme .content{
     background-color: #262626;
     color: #eee;
+}
+.dark-theme .language{
+    background:#262626;
+}
+.dark-theme .active{
+    color: #eee;
+    border-color: #eee;
 }
 
 /* Media queries */

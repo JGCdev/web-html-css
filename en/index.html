@@ -27,8 +27,35 @@
     </head>
     <body>
         <div class="content-wrapper">
-            <div class="language">
-                <a href="../">ES</a> - <span class="active">EN</span>
+            <div class="tabs">
+                <div class="language">
+                    <a href="../">ES</a> - <span class="active">EN</span>
+                </div>
+                <div class="theme-selector">
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round">
+                                <svg class="icon sun" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="6" fill="#FF5B97"/>
+                                    <g fill="none" stroke="#FF5B97" stroke-width="2">
+                                        <line x1="12" y1="1" x2="12" y2="5"/>
+                                        <line x1="12" y1="19" x2="12" y2="23"/>
+                                        <line x1="1" y1="12" x2="5" y2="12"/>
+                                        <line x1="19" y1="12" x2="23" y2="12"/>
+                                        <line x1="4" y1="4" x2="7" y2="7"/>
+                                        <line x1="17" y1="17" x2="20" y2="20"/>
+                                        <line x1="4" y1="20" x2="7" y2="17"/>
+                                        <line x1="17" y1="7" x2="20" y2="4"/>
+                                    </g>
+                                </svg>
+                                <svg class="icon moon" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-1.1-.18-2.16-.5-3.14-.91 1.21-2.37 2.04-4.07 2.04-2.76 0-5-2.24-5-5 0-1.7.83-3.16 2.04-4.07C14.16 2.18 13.1 2 12 2z" fill="#cbcbcb"/>
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
+                </div>
             </div>
             <main class="content">
                 <section class="introduction">
@@ -189,5 +216,6 @@
                 </section>
             </main>
         </div>
+        <script src="../assets/js/main.js"></script>
     </body>
 </html>

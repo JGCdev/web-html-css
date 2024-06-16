@@ -16,7 +16,6 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="16x16">
         <link rel="canonical" href="https://jesusgimenez.com/" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93955712-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -37,7 +36,7 @@
                         <label class="theme-switch" for="checkbox">
                             <input type="checkbox" id="checkbox" />
                             <div class="slider round">
-                                <svg class="icon sun" viewBox="0 0 24 24"> <!-- Icono del sol -->
+                                <svg class="icon sun" viewBox="0 0 24 24">
                                     <circle cx="12" cy="12" r="6" fill="#FF5B97"/>
                                     <g fill="none" stroke="#FF5B97" stroke-width="2">
                                         <line x1="12" y1="1" x2="12" y2="5"/>
@@ -219,19 +218,16 @@
         </div>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                // Verifica el estado guardado en localStorage y actualiza la interfaz
                 const isDark = localStorage.getItem('darkTheme') === 'true';
                 document.getElementById('checkbox').checked = isDark;
                 updateBodyClass(isDark);
 
-                // Añade un listener al cambio del checkbox
                 document.getElementById('checkbox').addEventListener('change', function() {
                     localStorage.setItem('darkTheme', this.checked);
                     updateBodyClass(this.checked);
                 });
             });
 
-            // Función para añadir o remover la clase dark-theme
             function updateBodyClass(isDark) {
                 if (isDark) {
                     document.body.classList.add('dark-theme');

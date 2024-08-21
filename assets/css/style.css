@@ -322,11 +322,11 @@ input:checked + .slider:before {
 .dark-theme{
     background: linear-gradient(-45deg, #862e5c 0%, #55608d 100%) center center fixed;
 }
-.dark-theme .generic h4, .dark-theme .exp h5, .dark-theme a{
+.dark-theme .generic h4, .dark-theme .exp h5, .dark-theme a, .dark-theme .contacto a:hover{
     color: #FF5B97;
 }
-.dark-theme .skills-exp h4:hover{
-    color:#D20B54;
+.dark-theme .skills-exp h4:hover,.dark-theme .contacto .icons a:hover {
+    color:#00A7B5;
 }
 
 .dark-theme .language a{

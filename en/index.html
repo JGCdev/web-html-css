@@ -1,8 +1,105 @@
 <html lang="en">
     <head>
-        <title>Jesús Giménez - Web Developer</title>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>Jesús Giménez - Web Developer</title>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-93955712-1');
+        </script>
+        <script>
+            (function() {
+                const screenWidth = window.screen.width;
+                const screenHeight = window.screen.height;
+                const thisSite = 'jesusgimenez';
+                const url = "https://inputfire.com/apipanel/";
+                let previousUrl = '';
+
+                function detectBrowser() {
+                    const ua = navigator.userAgent;
+                    return /chrome|crios/i.test(ua) ? 'chrome' :
+                        /safari/i.test(ua) && !/chrome|crios/i.test(ua) ? 'safari' :
+                        /firefox|fxios/i.test(ua) ? 'firefox' :
+                        /msie|trident/i.test(ua) ? 'ie' :
+                        /edge|edg/i.test(ua) ? 'edge' :
+                        /opera|opr/i.test(ua) ? 'opera' : 'unknown';
+                }
+
+                function getDeviceType() {
+                    return screenWidth <= 480 ? 'Mobile' : screenWidth <= 1024 ? 'Tablet' : 'Desktop';
+                }
+
+                function generateUUID() {
+                    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+                        const r = Math.random() * 16 | 0;
+                        return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+                    });
+                }
+
+                function getOrCreateUserId() {
+                    let userId = localStorage.getItem('userId');
+                    if (!userId) {
+                        userId = generateUUID();
+                        localStorage.setItem('userId', userId);
+                    }
+                    return userId;
+                }
+
+                function getUserInfo() {
+                    return {
+                        website: thisSite,
+                        userId: getOrCreateUserId(),
+                        url: window.location.href,
+                        referrer: document.referrer,
+                        timestamp: new Date().toISOString(),
+                        browser: detectBrowser(),
+                        language: navigator.language,
+                        platform: navigator.platform,
+                        deviceType: getDeviceType(),
+                        timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                        cookiesEnabled: navigator.cookieEnabled,
+                    };
+                }
+
+                function sendData(path, data) {
+                    fetch(`${url}/${path}`, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(data)
+                    }).catch(error => console.error(`Error sending ${path}:`, error));
+                }
+
+                function init() {
+                    sendData('recopilar', getUserInfo()); // Corrected function call
+
+                    const checkForChanges = () => {
+                        const currentUrl = window.location.href;
+                        if (currentUrl !== previousUrl) {
+                            sendData('recopilar', getUserInfo());
+                            previousUrl = currentUrl;
+                        }
+                    };
+
+                    document.addEventListener('visibilitychange', () => {
+                        if (document.visibilityState === 'visible') checkForChanges();
+                    });
+                    window.addEventListener('popstate', checkForChanges);
+                    window.addEventListener('pushstate', checkForChanges);
+
+                    setInterval(() => sendData('heartbeat', {
+                        userId: getOrCreateUserId(),
+                        website: thisSite,
+                        timestamp: new Date().toISOString()
+                    }), 30000);
+                }
+
+                init();
+            })();
+        </script>
+        <link rel="stylesheet" href="../assets/css/style.css">
         <meta name="keywords" content="spanish web developer, web developer, angular developer web" />
         <meta name="description" content="Web developer in Zaragoza specialized in Angular and WordPress. Get to know my experience and latest work." />
         <meta name="author" content="Jesús Giménez" />
@@ -12,18 +109,36 @@
         <meta property="og:description" content="Web developer based in Zaragoza, Spain. Specialized in Angular and WordPress. Get to know my experience and latest work.">
         <meta property="og:url" content="https://jesusgimenez.com">
         <meta property="og:locale" content="en_EN">
-        <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="icon" type="image/png" href="../assets/img/favicon.png" sizes="16x16">
         <link rel="canonical" href="https://jesusgimenez.com/en/" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93955712-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-93955712-1');
-        </script>
+        <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Person",
+              "name": "Jesús Giménez",
+              "url": "https://jesusgimenez.com",
+              "image": "https://jesusgimenez.com/assets/img/profile.jpg",
+              "jobTitle": "Web Developer specialized in Angular and WordPress",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Concentrix - Massimo Dutti"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/in/jes%C3%BAs-gim%C3%A9nez/",
+                "https://x.com/jesusgimenezcom"
+              ],
+              "alumniOf": {
+                "@type": "Montessori School",
+                "name": "Web Application High School Diploma"
+              },
+              "skills": "Web development, Angular, WordPress, SEO, Gaming",
+              "address": {
+                "@type": "StreetAddress",
+                "addressLocality": "Zaragoza, Spain",
+                "postalCode": "50005"
+              }
+            }
+        </script>        
     </head>
     <body>
         <div class="content-wrapper">
